@@ -10,7 +10,7 @@
 ## Writing a proper function
 1. A function should be no more than 20 lines
 2.  A function do only 1 thing
-3.  As few number of arguments as possible, if a function has more than 3 arguments, considering to wrap related arguments into a object
+3.  As few number of arguments as possible, if a function has more than 3 arguments, considering to wrap related arguments into an object
 4. Have no side effect (Function does some unexpected behaviours that change variables outside of scope or change system status)
 5.  Avoid output parameter 
 	- example: void appendFooter(StringBuffer report), this function return nothing but eventually change the value of input parameter. We should avoid this coding style and turn it into: report.appendFooter() to change their own properties of its object.
